@@ -2,6 +2,7 @@ import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import FamilyPicture from './assets/familypicture.png';
+import HeaderButtons from './components/HeaderButtons';
 import './App.css'
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
 
     return (
         <div id="mainPageContainer">
+            <HeaderButtons></HeaderButtons>
+
             <div id="mainPageMiddlePartContainer">
                 <div id="mainPageTitlesContainer">
                     <h5>Healing Hearts, Healing Lives</h5>
@@ -23,6 +26,7 @@ function App() {
                             a <span>reality</span>!</p>
                     </div>
                     <div className="greenSquare"></div>
+
                 </div>
 
             </div>

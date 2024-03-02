@@ -48,6 +48,11 @@
     width: 418px;
     height: 432px;
     background-color: #00715D;
+    margin-top: -10%;
+}
+#mainPageButtonAndSquareContainer{
+    display: flex;
+    flex-direction: row;
 }
 
 #mainPageWhiteSquare {
@@ -107,7 +112,6 @@
     margin-top: 4%;
     color: white;
     font-weight: normal;
-
 }
 
 

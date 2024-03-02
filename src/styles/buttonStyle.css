@@ -1,0 +1,31 @@
+.button-container {
+
+
+}
+.header-buttons{
+    display: flex;
+    z-index: 1;
+    margin-top: 1%;
+}
+.button {
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: #E17153;
+    border: none;
+    border-radius: 61.5px;
+    margin-right: 5%;/* Adjust spacing between buttons */
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+
+}
+.button:hover {
+    filter: brightness(1.2); /* Optional: Add a hover effect */
+}
+
+.button:last-child {
+    margin-right: 0; /* Remove right margin from the last button */
+}
+.button:first-child{
+    margin-left: 5%;
+}
