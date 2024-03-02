@@ -1,15 +1,19 @@
-.button-container {
-
-
-}
 .header-buttons{
     display: flex;
     z-index: 1;
     margin-top: 1%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+a{
+    text-decoration: none;
 }
 .button {
     width: 150px; /* Adjust width as needed */
-    height: 50px; /* Adjust height as needed */
+    height: 30px; /* Adjust height as needed */
     background-color: #E17153;
     border: none;
     border-radius: 61.5px;
@@ -18,6 +22,9 @@
     color: white;
     font-weight: bolder;
 
+}
+.button a{
+    justify-self: center;
 }
 .button:hover {
     filter: brightness(1.2); /* Optional: Add a hover effect */

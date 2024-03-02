@@ -1,12 +1,25 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {useState, useEffect} from 'react'
+// import {Route, Switch} from 'react-router-dom';
+import {
+    GetAllReunificationCases,
+    GetReunificationCaseById,
+    addReunificationCase,
+    updateReunificationCase,
+    deleteReunificationCase
+} from "./API/familyReunification.api.js"
+
 import FamilyPicture from './assets/familypicture.png';
 import HeaderButtons from './components/HeaderButtons';
 import './App.css'
 
 function App() {
-    const [count, setCount] = useState(0)
+    const [reunificationCase, setReunificationCase] = useState([]);
+    const [message, setMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
+
+
+
 
     return (
         <div id="mainPageContainer">
@@ -36,7 +49,8 @@ function App() {
                     <span>yet to be Reunified with their families...</span>
                 </div>
             </div>
-        </div>)
+        </div>
+    );
 }
 
 export default App
