@@ -1,6 +1,5 @@
-import {GetAllReunificationCases} from "../API/familyReunification.api.js";
-import {useState, useEffect} from "react";
-import axios from "axios";
+import { GetAllReunificationCases } from "../API/familyReunification.api.js";
+import { useState, useEffect } from "react";
 
 function GetAllCases() {
     const [reunificationCases, setReunificationCases] = useState([]);
@@ -8,22 +7,19 @@ function GetAllCases() {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        // const fetchData = async () => {
-        //     setIsLoading(true);
-        //     try {
-        //         const response = await GetAllReunificationCases();
-        //         console.log("this is my test",response);
-        //         setReunificationCases(response);
-        //     } catch (error) {
-        //         setError('Error fetching cases');
-        //     }
-        //     setIsLoading(false);
-        // };
-        //
-        // fetchData();
-        axios.get('https://assignment2-flmi.onrender.com/familyReunification')
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        const fetchData = async () => {
+            setIsLoading(true);
+            try {
+                const response = await GetAllReunificationCases();
+
+                setReunificationCases(response.data);
+            } catch (error) {
+                setError('Error fetching cases');
+            }
+            setIsLoading(false);
+        };
+
+        fetchData();
     }, []);
 
     return (

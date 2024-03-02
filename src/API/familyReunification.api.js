@@ -5,9 +5,7 @@ axios.defaults.withCredentials = true;
 const baseUrl = "https://assignment2-flmi.onrender.com";
 
 export const GetAllReunificationCases = async () => {
-    const response = await axios.get(baseUrl + "/familyReunification");
-    console.log("this is my response :",response);
-    return response
+    return await axios.get(baseUrl + "/familyReunification", {withCredentials: true})
 };
 export const GetReunificationCaseById = async (_id) => {
     return await axios.get(`${baseUrl}/familyReunification/${_id}`);
