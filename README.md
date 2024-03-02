@@ -3,6 +3,9 @@
 ## Description
 The Family Reunification App is a web application designed to manage information about reunification cases. It allows users to perform CRUD operations (Create, Read, Update, Delete) on reunification cases, including adding new cases, viewing all cases, updating existing cases, and deleting cases.
 
+## Figma
+[Link](https://www.figma.com/file/mchmMVlmCB1pwrIIQt4SJg/web-service-assignment3?type=design&node-id=0%3A1&mode=design&t=wc1NnJY3mkpxVwsS-1)
+
 ## Features
 - **Add Case:** Users can add a new reunification case by providing information such as parents, children, active status, reunion date, and reunion location.
 - **View All Cases:** Users can view all existing reunification cases along with their details.
