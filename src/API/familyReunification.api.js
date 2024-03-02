@@ -21,7 +21,9 @@ export const addReunificationCase = async (formData) => {
             reunion_location: formData.reunion_location
         };
 
-        return await axios.post(`${baseUrl}/familyReunification`, reunificationCase);
+        const response=  await axios.post(`${baseUrl}/familyReunification/`, reunificationCase);
+        console.log(response);
+        return response;
     } catch (error) {
         console.error("Error adding reunification case:", error);
     }
