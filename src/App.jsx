@@ -1,25 +1,8 @@
-import {useState, useEffect} from 'react'
-// import {Route, Switch} from 'react-router-dom';
-import {
-    GetAllReunificationCases,
-    GetReunificationCaseById,
-    addReunificationCase,
-    updateReunificationCase,
-    deleteReunificationCase
-} from "./API/familyReunification.api.js"
-
 import FamilyPicture from './assets/familypicture.png';
 import HeaderButtons from './components/HeaderButtons';
 import './App.css'
 
 function App() {
-    const [reunificationCase, setReunificationCase] = useState([]);
-    const [message, setMessage] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
-
-
-
-
 
     return (
         <div id="mainPageContainer">
